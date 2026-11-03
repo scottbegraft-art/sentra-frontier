@@ -1,0 +1,37 @@
+:root { color-scheme: light; font-family: system-ui, -apple-system, Segoe UI, sans-serif; }
+* { box-sizing: border-box; }
+body { margin: 0; background: #0f172a; color: #e2e8f0; }
+a { color: #7dd3fc; }
+.app { max-width: 1080px; margin: 0 auto; padding: 24px 16px 64px; }
+header h1 { margin: 0 0 4px; font-size: 32px; }
+header p { color: #94a3b8; margin: 4px 0; }
+.banner { border: 1px solid #f59e0b; background: #451a03; padding: 12px 14px; border-radius: 10px; margin: 16px 0; }
+.banner.live { border-color: #22c55e; background: #052e16; }
+.card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 16px; margin: 16px 0; }
+.card h2 { margin-top: 0; }
+.row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
+button { background: #0ea5e9; color: #fff; border: 0; border-radius: 8px; padding: 10px 16px; cursor: pointer; font-weight: 600; }
+button.secondary { background: #334155; }
+button.danger { background: #b91c1c; }
+button:disabled { opacity: 0.5; cursor: default; }
+input[type="file"] { color: #e2e8f0; }
+.preview { position: relative; display: inline-block; max-width: 100%; margin-top: 12px; }
+.preview img { display: block; max-width: 100%; max-height: 520px; border-radius: 8px; }
+.box { position: absolute; border: 3px solid #facc15; background: rgba(250, 204, 21, 0.12); pointer-events: none; }
+.box span { position: absolute; top: -22px; left: 0; background: #facc15; color: #111; font-size: 12px; font-weight: 700; padding: 2px 6px; border-radius: 4px; white-space: nowrap; }
+.pill { display: inline-block; border-radius: 999px; padding: 2px 10px; font-size: 12px; font-weight: 700; margin-right: 6px; }
+.pill.observation { background: #14532d; color: #bbf7d0; }
+.pill.assumption { background: #713f12; color: #fde68a; }
+.pill.fixture { background: #f59e0b; color: #111; }
+.pill.live { background: #22c55e; color: #111; }
+.pill.high { background: #7f1d1d; color: #fecaca; }
+.pill.medium { background: #713f12; color: #fde68a; }
+.pill.low { background: #334155; color: #e2e8f0; }
+.error { background: #7f1d1d; padding: 12px; border-radius: 8px; }
+.muted { color: #94a3b8; }
+ul { padding-left: 20px; }
+li { margin: 8px 0; }
+code { background: #0f172a; padding: 2px 6px; border-radius: 4px; }
+.history-item { border-top: 1px solid #334155; padding: 10px 0; }
+.history-item button { padding: 6px 10px; }
+@media (max-width: 640px) { header h1 { font-size: 26px; } }
